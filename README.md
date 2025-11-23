@@ -1,71 +1,56 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/f81caec4-9baa-4bb5-90a5-827b23420d79
+**URL**: https://dubai-cool-planner.vercel.app/
 
-## How can I edit this code?
+Dubai Cooling System Optimization App
+Project Overview
 
-There are several ways of editing your application.
+This project aims to optimize energy consumption in air-conditioned rooms in Dubai’s arid climate. The web app allows users to calculate cooling load, energy consumption, and cost, while simulating energy-saving strategies like pre-cooling, thermostat adjustments, and off-peak usage.
 
+Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f81caec4-9baa-4bb5-90a5-827b23420d79) and start prompting.
+Input room dimensions (length, width, height)
 
-Changes made via Lovable will be committed automatically to this repo.
+Input number of occupants, indoor temperature, and outdoor temperature
 
-**Use your preferred IDE**
+Calculate room volume and cooling load in kW
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Estimate energy consumption (kWh) and cost using DEWA tariff (0.29 $/kWh)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Simulate optimization strategies to reduce energy use and cost
 
-Follow these steps:
+Interactive graphs and results displayed in the app
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+How to Use
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Open the app via the deployed URL:
+https://your-vercel-link.vercel.app
 
-# Step 3: Install the necessary dependencies.
-npm i
+Enter room dimensions, number of occupants, and temperatures.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+View results for cooling load, energy consumption, and cost.
 
-**Edit a file directly in GitHub**
+Use sliders/buttons to simulate energy-saving strategies.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Optional: Export results for analysis (if implemented).
 
-**Use GitHub Codespaces**
+Technologies Used
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Frontend: React, TypeScript, Tailwind CSS (generated via Lovable)
 
-## What technologies are used for this project?
+Backend/Logic: cooling-calculations.ts (TypeScript functions for calculations)
 
-This project is built with:
+Deployment: Vercel
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Data Visualization: Power BI charts (for analysis and presentation)
 
-## How can I deploy this project?
+Assumptions
 
-Simply open [Lovable](https://lovable.dev/projects/f81caec4-9baa-4bb5-90a5-827b23420d79) and click on Share -> Publish.
+DEWA electricity tariff: 0.29 $/kWh
 
-## Can I connect a custom domain to my Lovable project?
+Each person generates 90W sensible heat + 30W latent heat
 
-Yes, you can!
+Small equipment load: 200W per room
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Outdoor temperature is user-provided (or live Dubai weather if integrated)
